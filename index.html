@@ -674,6 +674,18 @@ footer{background:#0a1a22}
   .about-grid h2{font-size:1.35rem}
   .about-grid .lead{font-size:.92rem}
 }
+/* ===== Correção do hero no mobile ===== */
+@media(max-width:860px){
+  .hero{text-align:center;padding-bottom:0}
+  .hero-grid{grid-template-columns:1fr;gap:20px}
+  .hero-grid>.reveal:first-child{padding-bottom:0}
+  .hero .eyebrow{display:block;border-left:0;padding:0}
+  .hero h1,.hero .lead{margin-inline:auto}
+  .hero .hero-cta,.hero .badges{width:100%;margin-inline:auto;justify-content:center}
+  .hero-visual{order:2;justify-content:center;width:100%}
+  .hero-card,.hero-card:hover{width:min(340px,86vw);margin-inline:auto}
+  .hero-card img{width:100%;height:auto;max-height:none}
+}
 </style>
 </head>
 <body>
