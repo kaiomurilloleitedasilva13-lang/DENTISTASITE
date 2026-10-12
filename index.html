@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Clínica Odontológica Mara Pereira | Dentista em Almirante Tamandaré - PR</title>
+<meta name="description" content="Clínica Odontológica Mara Pereira em Almirante Tamandaré - PR. Agende sua avaliação.">
+<meta name="theme-color" content="#0f766e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 8c-6-5-20-3-20 12 0 10 4 14 6 24 1 6 4 12 8 12s4-10 6-10 2 10 6 10 7-6 8-12c2-10 6-14 6-24C52 5 38 3 32 8z' fill='%230f766e'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Clínica Odontológica Mara Pereira | Almirante Tamandaré - PR">
+<meta property="og:description" content="Odontologia em Almirante Tamandaré. Agende sua avaliação.">
+<style>
+:root{
+  --primary:#0f766e;--primary-d:#0b5a54;--accent:#14b8a6;--soft:#ecfdf9;
+  --ink:#10292b;--muted:#5b7274;--bg:#ffffff;--radius:18px;
+  --shadow:0 10px 30px -12px rgba(15,118,110,.35);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;overflow-x:clip;-webkit-tap-highlight-color:transparent}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin-inline:auto}
+section{padding:88px 0}
+h1,h2,h3{line-height:1.15;margin:0 0 .5em;letter-spacing:-.02em}
+h1{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,7vw,4.6rem);font-weight:700;line-height:1.05;letter-spacing:-.025em;color:#0b2527}
+h1 .hl{font-style:italic;padding-right:.1em;display:block;position:relative;width:fit-content;max-width:100%;padding-bottom:.14em;background:linear-gradient(90deg,#0f766e 0%,#14b8a6 60%,#2dd4bf 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+h1 .hl::after{content:"";position:absolute;left:0;right:0;bottom:-.02em;height:.2em;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8Q50 0 100 6T198 5' fill='none' stroke='%2314b8a6' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat;transform-origin:left;animation:draw 1s .5s cubic-bezier(.22,1,.36,1) backwards}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+h2{font-size:clamp(1.7rem,3.6vw,2.5rem)}
+.eyebrow{display:inline-block;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);background:var(--soft);padding:6px 14px;border-radius:99px;margin-bottom:16px}
+.lead{color:var(--muted);font-size:1.1rem;max-width:560px}
+.center{text-align:center}.center .lead{margin-inline:auto}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 28px;border-radius:999px;font-weight:700;border:2px solid transparent;cursor:pointer;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s,background .25s;font-size:1rem;letter-spacing:.01em}
+.btn::before{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);transition:left .6s;pointer-events:none}
+.btn:hover::before{left:130%}
+.btn:active{transform:scale(.97)}
+.btn svg{width:20px;height:20px;flex:none;fill:currentColor}
+.btn-primary{background:linear-gradient(135deg,#14b8a6,#0f766e);color:#fff;box-shadow:0 10px 24px -8px rgba(15,118,110,.65),inset 0 1px 0 rgba(255,255,255,.25)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 30px -8px rgba(15,118,110,.75),inset 0 1px 0 rgba(255,255,255,.25)}
+.btn-ghost{border-color:var(--primary);color:var(--primary);background:#fff}
+.btn-ghost:hover{background:var(--soft);transform:translateY(-3px)}
+.btn-wa{background:linear-gradient(135deg,#34e57f,#128c4a);color:#fff;box-shadow:0 10px 24px -8px rgba(37,211,102,.7),inset 0 1px 0 rgba(255,255,255,.3)}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 16px 30px -8px rgba(37,211,102,.8),inset 0 1px 0 rgba(255,255,255,.3)}
+.cta-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* Header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s,padding .3s;padding:18px 0}
+header.scrolled{background:rgba(255,255,255,.92);backdrop-filter:blur(10px);box-shadow:0 2px 20px rgba(0,0,0,.06);padding:10px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem;color:var(--primary)}
+.logo svg{width:32px;height:32px}
+.menu{display:flex;align-items:center;gap:28px;font-weight:600}
+.menu a:not(.btn){position:relative;color:var(--ink)}
+.menu a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.menu a:not(.btn):hover::after{transform:scaleX(1)}
+.menu .btn{padding:10px 20px;color:#fff}
+.burger{display:none;background:none;border:0;padding:8px;cursor:pointer}
+.burger span{display:block;width:26px;height:3px;background:var(--ink);margin:5px 0;border-radius:3px;transition:transform .3s,opacity .3s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:150px 0 100px;background:#0b5a54}
+.hero-bg{position:absolute;inset:-40px;z-index:0;background:linear-gradient(160deg,rgba(6,78,72,.9),rgba(15,118,110,.8) 55%,rgba(11,90,84,.9)),url(medico.png) center top/cover no-repeat;filter:blur(16px)}
+.hero .container{position:relative;z-index:1}
+.hero .blob{opacity:.2}
+.hero h1{color:#fff}
+.hero h1 .hl{background:linear-gradient(90deg,#99f6e4,#5eead4,#fff);-webkit-background-clip:text;background-clip:text}
+.hero .lead{color:#d1fae5}
+.hero .eyebrow{background:rgba(255,255,255,.15);color:#fff}
+.hero .badges{color:#d1fae5}
+.hero .badges b{color:#fff}
+.hero .btn-ghost{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.08);backdrop-filter:blur(6px)}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.2)}
+header:not(.scrolled) .logo{color:#fff}
+header:not(.scrolled) .burger span{background:#fff}
+@media(min-width:861px){header:not(.scrolled) .menu a:not(.btn){color:#fff}}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero .lead{margin-bottom:32px;font-size:clamp(1.1rem,2.2vw,1.3rem);max-width:600px;line-height:1.65}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:34px;justify-content:center}
+.badges{display:flex;flex-wrap:wrap;gap:22px;color:var(--muted);font-size:.95rem}
+.badges b{color:var(--ink)}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.45;pointer-events:none;will-change:transform}
+.blob.a{width:340px;height:340px;background:#99f6e4;top:-80px;right:-60px;animation:float 9s ease-in-out infinite}
+.blob.b{width:260px;height:260px;background:#a7f3d0;bottom:-60px;left:-60px;animation:float 11s ease-in-out infinite reverse}
+@keyframes float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(20px,-30px,0)}}
+.hero-visual{position:relative;display:grid;place-items:center}
+.hero-card{width:min(380px,100%);aspect-ratio:1;border-radius:36% 64% 60% 40%/45% 40% 60% 55%;background:linear-gradient(135deg,var(--accent),var(--primary));display:grid;place-items:center;box-shadow:var(--shadow);animation:morph 10s ease-in-out infinite;overflow:hidden;position:relative}
+.hero-card img{width:100%;height:100%;object-fit:cover;object-position:center top;position:relative;z-index:1}
+.hero-card::after{content:"";position:absolute;inset:auto 0 0 0;height:30%;background:linear-gradient(to top,rgba(11,90,84,.55),transparent);z-index:2;pointer-events:none}
+@keyframes morph{0%,100%{border-radius:36% 64% 60% 40%/45% 40% 60% 55%}50%{border-radius:60% 40% 38% 62%/55% 60% 40% 45%}}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-14px) rotate(3deg)}}
+.chip{position:absolute;z-index:3;background:#fff;border-radius:14px;padding:12px 16px;box-shadow:0 12px 30px -10px rgba(0,0,0,.2);font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:8px;animation:bob 5s ease-in-out infinite}
+.chip.c1{top:6%;left:-2%}.chip.c2{top:44%;right:-4%;animation-delay:-2s}
+.chips{display:contents}
+.hero-visual{margin-bottom:16px}
+.doc-name{position:absolute;left:50%;bottom:-16px;transform:translateX(-50%);z-index:3;background:#fff;border-radius:16px;padding:10px 20px;text-align:center;box-shadow:0 12px 30px -10px rgba(0,0,0,.35);white-space:nowrap;display:grid;gap:1px}
+.doc-name b{color:var(--primary);font-size:1.05rem}
+.doc-name span{font-size:.8rem;color:var(--muted)}
+
+/* Serviços */
+.grid{display:grid;gap:22px;margin-top:48px}
+.services{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#fff;border:1px solid #e3efee;border-radius:var(--radius);padding:30px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.card:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:var(--accent)}
+.icon{width:54px;height:54px;border-radius:14px;background:var(--soft);color:var(--primary);display:grid;place-items:center;margin-bottom:18px;transition:background .3s,color .3s,transform .3s}
+.card:hover .icon{background:var(--primary);color:#fff;transform:rotate(-6deg) scale(1.05)}
+.icon svg{width:28px;height:28px}
+.card p{color:var(--muted);margin:0}
+
+/* Como funciona */
+.steps{background:linear-gradient(180deg,#fff,var(--soft))}
+.steps-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.step{padding:10px 20px;position:relative}
+.step p{color:var(--muted);margin:0}
+.num{width:60px;height:60px;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;font-size:1.5rem;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--accent),var(--primary));box-shadow:var(--shadow)}
+@media(min-width:861px){.step:not(:last-child)::after{content:"";position:absolute;top:40px;left:calc(50% + 40px);width:calc(100% - 58px);border-top:2px dashed #99d8d0}}
+
+/* Sobre */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.photo{aspect-ratio:4/5;border-radius:var(--radius);background:linear-gradient(160deg,#5eead4,#0f766e);display:grid;place-items:center;color:var(--primary);position:relative;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.photo::after{content:"";position:absolute;inset:auto 0 0 0;height:35%;background:linear-gradient(to top,rgba(11,90,84,.7),transparent);pointer-events:none}
+.list{list-style:none;padding:0;margin:24px 0 30px;display:grid;gap:12px}
+.list li{display:flex;gap:12px;align-items:flex-start}
+.list svg{flex:none;width:22px;height:22px;color:var(--accent);margin-top:3px}
+
+/* Localização */
+.local{background:var(--soft)}
+.local-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:stretch;margin-top:44px}
+.info{display:grid;gap:14px;align-content:start}
+.info-item{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #e3efee;border-radius:var(--radius);padding:20px 22px}
+.info-item .icon{margin:0;flex:none;width:48px;height:48px}
+.info-item h3{font-size:1.05rem;margin:0 0 4px}
+.info-item p{margin:0;color:var(--muted)}
+.info-item a.tel{color:var(--primary);font-weight:700}
+.info-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.map{position:relative;min-height:400px;border-radius:var(--radius);overflow:hidden;border:1px solid #e3efee;box-shadow:var(--shadow);background:#d9efeb}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(max-width:860px){
+  .local-grid{grid-template-columns:1fr;gap:28px}
+  .map{min-height:320px}
+}
+@media(max-width:560px){
+  .info-cta .btn{width:100%;justify-content:center}
+  .map{min-height:280px}
+}
+
+/* Extras */
+.progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:70;background:linear-gradient(90deg,var(--accent),var(--primary));transform:scaleX(0);transform-origin:left;will-change:transform;pointer-events:none}
+.skip{position:absolute;left:-999px;top:8px;z-index:100;background:#fff;color:var(--primary);font-weight:700;padding:10px 16px;border-radius:8px}
+.skip:focus{left:8px}
+.menu a.active:not(.btn)::after{transform:scaleX(1)}
+.btn,.burger,summary{touch-action:manipulation}
+.photo-tag{position:absolute;left:16px;right:16px;bottom:16px;z-index:2;background:rgba(255,255,255,.95);border-radius:14px;padding:12px 16px;display:grid;gap:2px;box-shadow:0 10px 24px -10px rgba(0,0,0,.35)}
+.photo-tag b{color:var(--primary)}
+.photo-tag span{font-size:.85rem;color:var(--muted)}
+
+/* FAQ */
+.faq{max-width:760px;margin:44px auto 0;display:grid;gap:12px}
+details{background:#fff;border:1px solid #e3efee;border-radius:14px;padding:18px 22px;transition:border-color .3s}
+details[open]{border-color:var(--accent)}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--primary);transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:12px 0 0;color:var(--muted)}
+
+/* CTA + Contato */
+.cta{background:linear-gradient(135deg,var(--primary),#0d9488);color:#fff;border-radius:28px;padding:56px 32px;text-align:center;position:relative;overflow:hidden}
+.cta .lead{color:#d1fae5;margin:0 auto 28px}
+.cta .btn{background:#fff;color:var(--primary);box-shadow:0 10px 24px -8px rgba(0,0,0,.3)}
+.cta .btn.btn-wa{background:linear-gradient(135deg,#34e57f,#128c4a);color:#fff}
+.cta .btn:hover{transform:translateY(-3px) scale(1.03)}
+.cta-note{margin:22px 0 0;font-size:.92rem;color:#d1fae5}
+
+footer{background:#0b1f21;color:#9db5b6;padding:34px 0;font-size:.92rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+/* Botão flutuante de ligação */
+.wpp{position:fixed;right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 25px -6px rgba(37,211,102,.6);transition:transform .25s}
+.wpp:hover{transform:scale(1.1)}
+.wpp svg{width:30px;height:30px}
+.wpp::before{content:"";position:absolute;inset:0;border-radius:50%;background:#25d366;animation:pulse 2.2s infinite;z-index:-1}
+@keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.7);opacity:0}}
+
+/* Reveal */
+.reveal{opacity:0;transform:translate3d(0,28px,0);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+.reveal.in{opacity:1;transform:none}
+.reveal.left{transform:translate3d(-30px,0,0)}.reveal.right{transform:translate3d(30px,0,0)}
+.reveal.left.in,.reveal.right.in{transform:none}
+
+/* Rodapé, barra mobile */
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;padding-bottom:26px;margin-bottom:22px;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot-top strong{display:block;color:#fff;margin-bottom:10px}
+.foot-top a,.foot-top span{display:block;padding:4px 0}
+.foot-top p{margin:0}
+.foot-top a:hover{color:#5eead4}
+.mbar{display:none}
+@media(max-width:860px){
+  .mbar{display:grid;grid-template-columns:1.2fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 4% calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 -6px 24px rgba(0,0,0,.08);transform:translateY(110%);transition:transform .35s}
+  .mbar.show{transform:none}
+  .mbar .btn{justify-content:center;padding:12px 10px;font-size:.95rem}
+  .mbar .btn-ghost{background:#fff}
+  .wpp{bottom:calc(88px + env(safe-area-inset-bottom));right:16px;width:56px;height:56px}
+  body{padding-bottom:76px}
+}
+@media(max-width:700px){.foot-top{grid-template-columns:1fr;gap:22px}}
+@media(max-width:380px){.logo{font-size:1rem}h1{font-size:2rem}.btn{padding:13px 20px}}
+
+/* Responsivo */
+@media(max-width:860px){
+  section{padding:64px 0}
+  .hero{padding:120px 0 70px}
+  .hero-grid,.about-grid{grid-template-columns:1fr}
+  .hero-grid{gap:20px}
+  .hero-visual{order:-1;width:100%;max-width:none;margin:0}
+  .hero-card{width:100%;aspect-ratio:16/11;border-radius:28px;animation:none}
+  .burger{display:block;min-width:44px;min-height:44px}
+  .menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;background:#fff;padding:18px 5% 26px;gap:6px;box-shadow:0 20px 30px rgba(0,0,0,.08);transform:translateY(-12px);opacity:0;transition:transform .3s,opacity .3s,visibility .3s;visibility:hidden}
+  .menu.open{transform:none;opacity:1;visibility:visible}
+  .menu a:not(.btn){padding:12px 0;font-size:1.05rem}
+  .menu .btn{justify-content:center;margin-top:8px;padding:14px 20px}
+  .chip.c1{top:12px;left:12px}.chip.c2{bottom:12px;right:12px}
+}
+@media(max-width:560px){
+  section{padding:52px 0}
+  .container{width:90%}
+  .hero{padding:104px 0 56px}
+  .hero-cta .btn,.cta .btn{width:100%;justify-content:center}
+  .badges{gap:10px 18px;font-size:.88rem}
+  .card{padding:24px}
+  .cta{padding:40px 20px;border-radius:22px}
+  .step{padding:6px 8px}
+  .blob{filter:blur(40px);animation:none}
+  .chip{font-size:.8rem;padding:8px 12px}
+  .foot{flex-direction:column}
+}
+@media(hover:none){
+  .card:hover{transform:none;box-shadow:none;border-color:#e3efee}
+  .card:hover .icon{background:var(--soft);color:var(--primary);transform:none}
+  .btn-primary:hover,.btn-ghost:hover{transform:none}
+}
+/* Mobile compacto */
+@media(max-width:560px){
+  section{padding:40px 0}
+  h2{font-size:1.45rem}
+  .lead{font-size:.95rem}
+  .hero{padding:92px 0 44px}
+  h1{font-size:clamp(1.9rem,9vw,2.4rem)}
+  .hero .lead{margin-bottom:20px;font-size:1rem}
+  .hero-cta{flex-wrap:nowrap;gap:10px;margin-bottom:22px}
+  .hero-cta .btn{flex:1;width:auto;justify-content:center;padding:12px 8px;font-size:.88rem}
+  .badges{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:.82rem}
+  .badges span:last-child{grid-column:1/-1}
+  .hero-card{aspect-ratio:4/3;border-radius:24px}
+  .grid{margin-top:28px;gap:12px}
+  .services{grid-template-columns:1fr 1fr}
+  .card{padding:16px 14px;text-align:left}
+  .card .icon{width:42px;height:42px;margin-bottom:10px}
+  .icon svg{width:22px;height:22px}
+  .card h3{font-size:1rem}
+  .card p{font-size:.82rem;line-height:1.45}
+  .steps-grid{grid-template-columns:repeat(3,1fr);gap:8px}
+  .step{padding:0 2px}
+  .step h3{font-size:.85rem}
+  .step p{font-size:.74rem;line-height:1.4}
+  .num{width:44px;height:44px;font-size:1.1rem;margin-bottom:10px}
+  .about-grid{gap:24px}
+  .photo{aspect-ratio:1/1;max-height:340px}
+  .list{margin:16px 0 20px;gap:8px;font-size:.92rem}
+  .local-grid{gap:18px;margin-top:26px}
+  .info{grid-template-columns:1fr 1fr;gap:10px}
+  .info-item{padding:12px;gap:10px;flex-direction:column}
+  .info-item:first-child{grid-column:1/-1;flex-direction:row}
+  .info-item .icon{width:38px;height:38px}
+  .info-item h3{font-size:.95rem}
+  .info-item p{font-size:.85rem}
+  .info-cta{grid-column:1/-1;flex-wrap:nowrap;gap:10px}
+  .info-cta .btn{width:auto;flex:1;padding:12px 8px;font-size:.9rem}
+  .map{min-height:220px}
+  .faq{margin-top:26px;gap:8px}
+  details{padding:14px 16px}
+  .cta{padding:32px 18px}
+  .foot-top{grid-template-columns:1fr 1fr;gap:18px}
+  .foot-top>div:first-child{grid-column:1/-1}
+}
+@media(max-width:860px){
+  .hero{text-align:center}
+  .hero .lead{margin-inline:auto}
+  .hero-cta,.badges{justify-content:center}
+  .hero-visual{display:grid;justify-items:center;gap:0}
+  .hero-card{width:min(250px,68vw);aspect-ratio:1/1;border-radius:30px;border:5px solid #fff;animation:none}
+  .doc-name{position:static;transform:none;margin-top:-26px}
+  .chips{display:flex;gap:8px;justify-content:center;margin-top:14px}
+  .chip{position:static;animation:none}
+}
+@media(max-width:560px){
+  .hero-cta{flex-wrap:wrap}
+  .hero-cta .btn{flex:1 1 40%}
+  .hero-cta .btn-wa{flex-basis:100%}
+  .info-cta{flex-wrap:wrap}
+  .info-cta .btn{flex:1 1 40%}
+  .info-cta .btn-agendar{flex-basis:100%}
+}
+@media(min-width:1280px){
+  .container{width:min(1200px,92%)}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+<style>
+/* ===== Camada moderna ===== */
+:root{--radius:24px;--shadow:0 28px 50px -26px rgba(15,118,110,.4),0 2px 6px rgba(16,41,43,.04)}
+html{scrollbar-color:#14b8a6 #ecfdf9}
+::selection{background:#14b8a6;color:#fff}
+body{font-family:"Inter","Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#fbfefd}
+
+/* Tipografia */
+h1{font-family:inherit;font-weight:800;letter-spacing:-.045em;line-height:1.02}
+h1 .hl{font-style:normal}
+h2{font-weight:800;letter-spacing:-.035em}
+.lead{line-height:1.7}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(15,118,110,.15);font-weight:600;letter-spacing:.06em}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(20,184,166,.25)}
+.hero .eyebrow{border-color:rgba(255,255,255,.25);backdrop-filter:blur(8px)}
+.hero .eyebrow::before{background:#5eead4}
+
+/* Header vidro */
+header.scrolled{background:rgba(255,255,255,.72);backdrop-filter:saturate(180%) blur(18px);-webkit-backdrop-filter:saturate(180%) blur(18px);box-shadow:none;border-bottom:1px solid rgba(15,118,110,.08)}
+
+/* Botões */
+.btn{font-weight:600;letter-spacing:0}
+.btn-ghost{border-width:1.5px}
+.btn-primary{box-shadow:0 12px 28px -10px rgba(15,118,110,.7),inset 0 1px 0 rgba(255,255,255,.3)}
+
+/* Hero */
+.hero{border-radius:0 0 clamp(24px,4vw,56px) clamp(24px,4vw,56px)}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(55% 50% at 88% 8%,rgba(45,212,191,.38),transparent 62%),radial-gradient(45% 45% at 4% 92%,rgba(94,234,212,.22),transparent 62%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1.5px);background-size:26px 26px;-webkit-mask-image:linear-gradient(to bottom,#000,transparent 85%);mask-image:linear-gradient(to bottom,#000,transparent 85%)}
+.hero-card{box-shadow:0 40px 80px -30px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.3)}
+.chip,.doc-name{background:rgba(255,255,255,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.7)}
+
+/* Cards */
+.card{position:relative;background:linear-gradient(180deg,#fff,#f6fcfb);border-color:rgba(15,118,110,.1);box-shadow:0 1px 2px rgba(16,41,43,.04),0 14px 26px -18px rgba(16,41,43,.15)}
+.card::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(120% 80% at 0 0,rgba(20,184,166,.14),transparent 55%);opacity:0;transition:opacity .35s;pointer-events:none}
+.card:hover{transform:translateY(-6px);border-color:rgba(20,184,166,.55)}
+.card:hover::before{opacity:1}
+.icon{border-radius:16px;background:linear-gradient(135deg,#d6f6ef,#ecfdf9);box-shadow:inset 0 0 0 1px rgba(15,118,110,.12)}
+.card:hover .icon{background:linear-gradient(135deg,#14b8a6,#0f766e)}
+
+/* Passos */
+.steps{background:radial-gradient(70% 60% at 50% 0,rgba(20,184,166,.1),transparent 70%),linear-gradient(180deg,#fbfefd,var(--soft))}
+.num{box-shadow:0 0 0 7px rgba(20,184,166,.14),var(--shadow)}
+
+/* Sobre */
+.photo{border-radius:30px;box-shadow:var(--shadow)}
+.list li{padding:2px 0}
+.list svg{background:var(--soft);border-radius:50%;padding:4px;width:26px;height:26px;margin-top:1px}
+
+/* Localização */
+.info-item{box-shadow:0 1px 2px rgba(16,41,43,.04),0 12px 24px -18px rgba(16,41,43,.15);transition:transform .3s,border-color .3s,box-shadow .3s}
+.info-item:hover{transform:translateY(-3px);border-color:rgba(20,184,166,.5);box-shadow:var(--shadow)}
+.map{border-radius:28px}
+
+/* FAQ */
+details{border-radius:18px;border-color:rgba(15,118,110,.1);box-shadow:0 1px 2px rgba(16,41,43,.03);transition:border-color .3s,box-shadow .3s}
+details[open]{box-shadow:var(--shadow)}
+summary::after{flex:none;width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:var(--soft);font-size:1.25rem}
+
+/* CTA */
+.cta{border-radius:clamp(22px,4vw,32px);background:radial-gradient(60% 120% at 100% 0,rgba(45,212,191,.5),transparent 62%),linear-gradient(135deg,#0b5a54,#0f766e 55%,#0d9488);box-shadow:0 40px 70px -35px rgba(15,118,110,.7)}
+.cta::before{content:"";position:absolute;width:340px;height:340px;right:-90px;top:-130px;border-radius:50%;border:1px solid rgba(255,255,255,.18);box-shadow:0 0 0 44px rgba(255,255,255,.04);pointer-events:none}
+.cta>*{position:relative}
+
+/* Rodapé */
+footer{background:linear-gradient(180deg,#0b1f21,#071417)}
+
+/* Animação de entrada */
+.reveal{filter:blur(6px);transition:opacity .85s cubic-bezier(.22,1,.36,1),transform .85s cubic-bezier(.22,1,.36,1),filter .85s cubic-bezier(.22,1,.36,1);transition-delay:var(--d,0s)}
+.reveal.in{filter:none}
+
+/* Foto do dentista integrada ao fundo, sem moldura */
+.hero-card,.hero-card:hover{width:min(460px,100%);aspect-ratio:auto;background:none;border:0;border-radius:0;box-shadow:none;animation:none;overflow:visible}
+.hero-card::after{display:none}
+.hero-card img{height:auto;object-fit:contain;object-position:center bottom}
+@media(max-width:860px){.hero-card,.hero-card:hover{width:min(320px,82vw);aspect-ratio:auto;border:0;border-radius:0}}
+/* Foto ancorada na base do hero */
+.hero{padding-bottom:0}
+.hero-grid{align-items:end}
+.hero-grid>.reveal:first-child{align-self:center;padding-bottom:80px}
+.hero-visual{align-self:end;margin-bottom:0}
+.doc-name{bottom:18px}
+@media(max-width:860px){
+  .hero-grid{align-items:start}
+  .hero-grid>.reveal:first-child{align-self:auto;padding-bottom:0}
+  .hero-visual{order:2;align-self:auto;width:100%;margin-top:8px}
+  .hero-card,.hero-card:hover{width:min(340px,88vw)}
+  .doc-name{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);margin:0}
+  .chips{order:-1;margin:0 0 10px}
+}
+/* Foto do dentista: grande, à direita, base colada no fim da área verde */
+.hero-grid{grid-template-columns:1fr 1fr}
+.hero-visual{display:flex;justify-content:flex-end;align-items:flex-end;align-self:end;justify-self:stretch;margin:0}
+.hero-card,.hero-card:hover{width:min(580px,100%);margin:0}
+.hero-card img{display:block;width:100%;height:auto;margin:0}
+@media(max-width:860px){
+  .hero-visual{justify-content:center}
+  .hero-card,.hero-card:hover{width:min(380px,92vw)}
+}
+@media(prefers-reduced-motion:reduce){.reveal{filter:none}}
+/* Foto do hero sem moldura (fundo transparente) */
+.hero-card,.hero-card:hover{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;outline:0!important;overflow:visible!important}
+.hero-card::before,.hero-card::after{display:none!important;content:none!important}
+.hero-card img{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;-webkit-mask:none;mask:none}
+@media(max-width:860px){
+  .hero-card,.hero-card:hover{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+}
+/* Tipografia do hero (estilo referência) */
+.hero h1,.hero .lead,.hero .badges,.hero .hero-cta .btn{font-family:"Space Grotesk","Plus Jakarta Sans","Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.hero h1{font-size:clamp(1.9rem,4.4vw,3.3rem);font-weight:600;line-height:1.12;letter-spacing:-.025em;color:#fff;max-width:520px}
+.hero h1 .hl{display:inline;font-style:normal;padding:0;width:auto;background:none;-webkit-background-clip:border-box;background-clip:border-box;-webkit-text-fill-color:#fff;color:#fff}
+.hero h1 .hl::after{display:none}
+.hero .lead{font-size:.92rem;font-weight:400;line-height:1.65;color:rgba(255,255,255,.82);max-width:400px;margin-bottom:26px}
+.hero .hero-cta .btn{background:#0a1a1c;color:#fff;font-weight:500;font-size:.9rem;border:1.5px solid rgba(45,212,191,.75);box-shadow:0 0 22px -2px rgba(45,212,191,.55),inset 0 0 12px rgba(45,212,191,.25);backdrop-filter:none}
+.hero .hero-cta .btn:hover{background:#0f2a2c;box-shadow:0 0 30px 0 rgba(45,212,191,.7),inset 0 0 14px rgba(45,212,191,.35)}
+.hero .badges{font-size:.75rem;font-weight:500;gap:8px 18px;color:rgba(255,255,255,.85)}
+.hero .badges b{font-weight:600;color:#fff}
+/* Botão único em destaque */
+.hero .hero-cta .btn.btn-agendar{background:linear-gradient(135deg,#5eead4,#14b8a6 55%,#0d9488);color:#04302c;font-weight:700;font-size:1.05rem;padding:17px 36px;border:0;box-shadow:0 0 0 0 rgba(45,212,191,.6),0 16px 34px -10px rgba(45,212,191,.85),inset 0 1px 0 rgba(255,255,255,.55);animation:destaque 2.4s ease-out infinite}
+.hero .hero-cta .btn.btn-agendar:hover{background:linear-gradient(135deg,#99f6e4,#2dd4bf 55%,#14b8a6);transform:translateY(-3px) scale(1.04)}
+.cta .btn.btn-agendar{font-family:"Space Grotesk","Plus Jakarta Sans","Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:linear-gradient(135deg,#5eead4,#14b8a6 55%,#0d9488);color:#04302c;font-weight:700;font-size:1.05rem;padding:17px 36px;border:0;box-shadow:0 0 0 0 rgba(45,212,191,.6),0 16px 34px -10px rgba(45,212,191,.85),inset 0 1px 0 rgba(255,255,255,.55);animation:destaque 2.4s ease-out infinite}
+.cta .btn.btn-agendar:hover{background:linear-gradient(135deg,#99f6e4,#2dd4bf 55%,#14b8a6);transform:translateY(-3px) scale(1.04)}
+.info-cta .btn.btn-agendar{font-family:"Space Grotesk","Plus Jakarta Sans","Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:linear-gradient(135deg,#5eead4,#14b8a6 55%,#0d9488);color:#04302c;font-weight:700;font-size:1rem;padding:15px 28px;border:0;box-shadow:0 0 0 0 rgba(45,212,191,.6),0 16px 34px -10px rgba(45,212,191,.85),inset 0 1px 0 rgba(255,255,255,.55);animation:destaque 2.4s ease-out infinite}
+.info-cta .btn.btn-agendar:hover{background:linear-gradient(135deg,#99f6e4,#2dd4bf 55%,#14b8a6);transform:translateY(-3px) scale(1.04)}
+@keyframes destaque{0%{box-shadow:0 0 0 0 rgba(45,212,191,.6),0 16px 34px -10px rgba(45,212,191,.85),inset 0 1px 0 rgba(255,255,255,.55)}70%,100%{box-shadow:0 0 0 18px rgba(45,212,191,0),0 16px 34px -10px rgba(45,212,191,.85),inset 0 1px 0 rgba(255,255,255,.55)}}
+@media(max-width:560px){.hero .hero-cta .btn.btn-agendar{flex:1 1 100%;font-size:1rem;padding:16px 24px}}
+/* Botão no centro exato do hero */
+@media(min-width:861px){.hero .hero-cta{width:min(100%,440px);justify-content:center}}
+/* Badges do hero em formato pílula */
+.hero .badges{display:flex;flex-wrap:wrap;gap:10px;font-size:.85rem}
+.hero .badges>*{display:inline-flex;align-items:center;gap:8px;padding:6px 16px 6px 6px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;box-shadow:0 8px 20px -12px rgba(0,0,0,.5);transition:transform .25s,background .25s,border-color .25s}
+.hero .badges>*:hover{background:rgba(255,255,255,.2);border-color:rgba(94,234,212,.7);transform:translateY(-2px)}
+.hero .badges i{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#5eead4,#14b8a6);color:#04302c;box-shadow:0 0 0 3px rgba(94,234,212,.2)}
+.hero .badges i svg{width:15px;height:15px}
+.hero .badges b{font-weight:600}
+@media(max-width:560px){.hero .badges{gap:8px;font-size:.78rem}.hero .badges>*{padding:5px 12px 5px 5px}.hero .badges i{width:26px;height:26px}.hero .badges i svg{width:13px;height:13px}}
+/* Badges menores e alinhados ao botão */
+.hero .badges{gap:6px;font-size:.72rem;justify-content:center;width:min(100%,440px)}
+.hero .badges>*{gap:6px;padding:4px 11px 4px 4px}
+.hero .badges i{width:22px;height:22px;box-shadow:0 0 0 2px rgba(94,234,212,.2)}
+.hero .badges i svg{width:11px;height:11px}
+@media(max-width:860px){.hero .badges{margin-inline:auto}}
+@media(max-width:560px){.hero .badges{gap:6px;font-size:.7rem}.hero .badges>*{padding:4px 10px 4px 4px}.hero .badges i{width:20px;height:20px}.hero .badges i svg{width:10px;height:10px}}
+</style>
+<style>
+/* Correção dos botões (sem corte nas laterais) */
+.btn{white-space:nowrap;isolation:isolate;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.btn-primary,.btn-wa{background-origin:border-box;background-clip:border-box}
+.btn-primary{padding-inline:32px}
+.menu .btn{padding:10px 24px}
+@media(max-width:860px){.mbar .btn{padding:13px 18px}}
+@media(max-width:560px){.info-cta .btn{padding:13px 20px;font-size:.95rem}.mbar .btn{padding:13px 16px;font-size:.95rem}}
+/* Prova social */
+.proof{background:var(--soft)}
+.proof-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));text-align:left}
+.quote{display:flex;flex-direction:column;gap:16px;background:#fff;border:1px solid rgba(15,118,110,.1);border-radius:var(--radius);padding:28px;box-shadow:0 1px 2px rgba(16,41,43,.04),0 14px 26px -18px rgba(16,41,43,.15);transition:transform .3s,box-shadow .3s}
+.quote:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.stars{color:#f5b301;letter-spacing:3px;font-size:1.1rem}
+.quote p{margin:0;color:var(--ink);font-size:1rem;line-height:1.65;flex:1}
+.who{display:flex;align-items:center;gap:12px}
+.avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--accent),var(--primary))}
+.who b{display:block;line-height:1.2}
+.who span{font-size:.85rem;color:var(--muted)}
+@media(max-width:560px){.proof-grid{grid-template-columns:1fr}.quote{padding:20px}}
+/* Galeria do ambiente */
+.env{margin-top:72px;text-align:center}
+.env-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:28px}
+.shot{margin:0;position:relative;aspect-ratio:4/3;border-radius:22px;overflow:hidden;background:linear-gradient(135deg,#d6f6ef,#ecfdf9);box-shadow:var(--shadow);display:grid;place-items:center;color:var(--primary)}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.shot .ph{display:grid;gap:8px;justify-items:center;font-weight:600;font-size:.9rem}
+.shot .ph svg{width:36px;height:36px}
+.shot figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.92);padding:6px 12px;border-radius:99px;font-size:.8rem;font-weight:600;color:var(--primary)}
+@media(max-width:560px){.env{margin-top:44px}.env-grid{grid-template-columns:1fr 1fr}.env-grid .shot:first-child{grid-column:1/-1}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dentist","name":"Clínica Odontológica Mara Pereira","address":{"@type":"PostalAddress","addressLocality":"Almirante Tamandaré","addressRegion":"PR","addressCountry":"BR"}}
+</script>
+<style>
+/* ===== Otimização mobile v2 ===== */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(max-width:860px){
+  header{padding-top:max(14px,env(safe-area-inset-top))}
+  header.scrolled{padding-top:max(8px,env(safe-area-inset-top))}
+
+  /* Menu */
+  .menu{max-height:calc(100vh - 70px);max-height:calc(100svh - 70px);overflow-y:auto;overscroll-behavior:contain;border-radius:0 0 22px 22px}
+  .menu a:not(.btn){display:flex;align-items:center;min-height:48px;padding:12px 4px;border-bottom:1px solid rgba(15,118,110,.1)}
+  .menu a:not(.btn)::after{display:none}
+  .menu a.active:not(.btn){color:var(--primary);font-weight:700}
+
+  /* Desempenho */
+  .reveal,.reveal.left,.reveal.right{filter:none;transform:translate3d(0,18px,0);transition-duration:.55s}
+  .reveal.in,.reveal.left.in,.reveal.right.in{transform:none}
+  .hero-bg{filter:blur(8px)}
+  .blob,.hero::after{display:none}
+  .chip,.doc-name,.hero .badges>*,.hero .eyebrow,.hero .btn-ghost{-webkit-backdrop-filter:none;backdrop-filter:none}
+  .hero .badges>*{background:rgba(255,255,255,.16)}
+  .doc-name{background:rgba(255,255,255,.96)}
+
+  /* Hero */
+  .hero h1{max-width:none;text-wrap:balance}
+  .hero-card img{max-height:56vh;max-height:56svh;object-fit:contain;margin-inline:auto}
+}
+
+@media(max-width:560px){
+  h1{font-size:clamp(1.8rem,8.4vw,2.3rem)}
+  .hero .badges{font-size:.76rem}
+  .hero .badges i{width:22px;height:22px}
+
+  /* Serviços */
+  .card h3{font-size:1.02rem}
+  .services .card p{font-size:.875rem;line-height:1.5}
+
+  /* Passos em cartões */
+  .steps-grid{grid-template-columns:1fr;gap:12px}
+  .step{display:grid;grid-template-columns:48px 1fr;column-gap:14px;align-items:start;text-align:left;padding:14px;background:#fff;border:1px solid rgba(15,118,110,.1);border-radius:18px}
+  .step .num{grid-row:1/3;width:48px;height:48px;margin:0;font-size:1.15rem;box-shadow:0 0 0 4px rgba(20,184,166,.14)}
+  .step h3{font-size:1rem;margin:0 0 2px}
+  .step p{font-size:.88rem;line-height:1.5}
+
+  /* Depoimentos em carrossel */
+  .proof-grid{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin-inline:-5vw;padding:4px 5vw 14px;scrollbar-width:none}
+  .proof-grid::-webkit-scrollbar{display:none}
+  .proof-grid .quote{flex:0 0 84%;scroll-snap-align:center}
+  .proof-grid .quote.reveal{opacity:1;transform:none;filter:none}
+
+  /* FAQ */
+  summary{min-height:44px;align-items:center;font-size:1rem}
+  details p{font-size:.95rem}
+
+  /* Localização e CTA */
+  .info-item p{font-size:.9rem}
+  .map{min-height:260px}
+  .cta-btns{flex-direction:column}
+  .cta h2{font-size:1.5rem}
+
+  /* Botão flutuante */
+  .wpp{width:52px;height:52px}
+  .wpp svg{width:26px;height:26px}
+}
+
+/* Telas muito pequenas */
+@media(max-width:360px){
+  .services{grid-template-columns:1fr}
+  .info{grid-template-columns:1fr}
+  .logo{font-size:.95rem}
+  .logo svg{width:26px;height:26px}
+}
+
+/* Celular na horizontal */
+@media(max-height:480px) and (orientation:landscape){
+  .hero{padding-top:80px}
+  .hero-card,.hero-card:hover{width:min(240px,40vw)}
+  .hero-card img{max-height:70vh}
+}
+
+/* Sem hover "preso" no toque */
+@media(hover:none){
+  .info-item:hover,.quote:hover{transform:none;box-shadow:none}
+  .hero .badges>*:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.24);transform:none}
+  .hero .hero-cta .btn.btn-agendar:hover,.cta .btn.btn-agendar:hover,.info-cta .btn.btn-agendar:hover{transform:none}
+}
+</style>
+<style>
+/* ===== Visual empresarial ===== */
+:root{--primary:#0f5f63;--primary-d:#0a4448;--accent:#1f8a8a;--soft:#eef4f5;--ink:#0f2530;--muted:#5a6b73;--radius:12px;--shadow:0 12px 28px -16px rgba(15,37,48,.28)}
+::selection{background:var(--primary);color:#fff}
+body{background:#f7f9fa;color:var(--ink)}
+h2{font-weight:700;letter-spacing:-.02em;color:var(--ink)}
+.progress{background:var(--primary)}
+.reveal,.reveal.in{filter:none}
+
+.eyebrow,.hero .eyebrow{background:transparent;border:0;border-left:3px solid var(--primary);border-radius:0;padding:2px 0 2px 12px;font-size:.72rem;font-weight:600;letter-spacing:.14em;color:var(--primary);backdrop-filter:none;-webkit-backdrop-filter:none}
+.eyebrow::before,.hero .eyebrow::before{display:none}
+
+header{background:#fff;box-shadow:0 1px 0 #e3e9ec;padding:14px 0}
+header.scrolled{background:rgba(255,255,255,.97);backdrop-filter:none;-webkit-backdrop-filter:none;border-bottom:0;box-shadow:0 1px 0 #e3e9ec;padding:10px 0}
+header:not(.scrolled) .logo,.logo{color:var(--primary)}
+header:not(.scrolled) .burger span{background:var(--ink)}
+@media(min-width:861px){header:not(.scrolled) .menu a:not(.btn){color:var(--ink)}}
+
+.btn{border-radius:10px;font-weight:600;letter-spacing:.01em}
+.btn::before{display:none}
+.btn-primary{background:var(--primary);box-shadow:none}
+.btn-primary:hover{background:var(--primary-d);box-shadow:0 8px 18px -10px rgba(15,95,99,.7);transform:translateY(-1px)}
+.btn-ghost{border-color:var(--primary);color:var(--primary);background:#fff}
+.hero .hero-cta .btn.btn-agendar,.cta .btn.btn-agendar,.info-cta .btn.btn-agendar{background:var(--primary);color:#fff;border:0;border-radius:10px;animation:none;font-weight:600;font-size:.98rem;padding:16px 32px;box-shadow:0 10px 22px -12px rgba(15,95,99,.8)}
+.hero .hero-cta .btn.btn-agendar:hover,.info-cta .btn.btn-agendar:hover{background:var(--primary-d);transform:translateY(-1px)}
+
+.hero{background:#e9f1f2;border-radius:0}
+.hero-bg{background:linear-gradient(135deg,#f4f8f9 0%,#e1eced 100%);filter:none}
+.hero::before{background:radial-gradient(50% 60% at 85% 20%,rgba(31,138,138,.13),transparent 70%)}
+.hero::after,.blob{display:none}
+.hero h1,.hero h1 .hl{color:var(--ink);-webkit-text-fill-color:var(--ink)}
+.hero h1{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,4.8vw,3.9rem);font-weight:600;line-height:1.08;letter-spacing:-.02em;max-width:560px;text-wrap:balance}
+.hero h1 .hl{font-style:normal;color:var(--primary);-webkit-text-fill-color:var(--primary)}
+.hero .eyebrow{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.hero .lead{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:1.02rem;line-height:1.75;color:#4a5c65;max-width:440px;margin-bottom:30px}
+.hero .badges>*{background:#fff!important;border:1px solid #d9e3e6;border-radius:8px;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;padding:5px 12px 5px 5px}
+.hero .badges>*:hover{background:#fff!important;border-color:var(--primary);transform:none}
+.hero .badges,.hero .badges b{color:var(--ink)}
+.hero .badges i{border-radius:6px;background:var(--primary);color:#fff;box-shadow:none}
+
+.card{background:#fff;border:1px solid #e1e8eb;border-radius:12px;box-shadow:none}
+.card::before{display:none}
+.card:hover{transform:translateY(-3px);border-color:var(--primary);box-shadow:var(--shadow)}
+.icon{border-radius:10px;background:var(--soft);color:var(--primary);box-shadow:none}
+.card:hover .icon{background:var(--primary);color:#fff;transform:none}
+.steps{background:#fff;border-block:1px solid #e6ecee}
+.num{border-radius:10px;background:var(--primary);box-shadow:none}
+.photo{border-radius:14px;background:linear-gradient(160deg,#cfe3e4,#0f5f63);box-shadow:var(--shadow)}
+.photo-tag{border-radius:10px}
+.list svg{border-radius:6px;background:var(--soft);color:var(--primary)}
+.quote{border-radius:12px;box-shadow:none;border-color:#e1e8eb}
+.quote:hover{transform:none;box-shadow:var(--shadow)}
+.stars{color:#c9962b}
+.avatar{background:var(--primary)}
+details{border-radius:10px;box-shadow:none;border-color:#e1e8eb}
+details[open]{border-color:var(--primary);box-shadow:none}
+summary::after{border-radius:6px;background:var(--soft)}
+.info-item{border-radius:12px;box-shadow:none;border-color:#e1e8eb}
+.info-item:hover{transform:none;box-shadow:none;border-color:var(--primary)}
+.map{border-radius:14px;box-shadow:none;border-color:#e1e8eb}
+
+.cta{background:#0f2530;border-radius:16px;box-shadow:none}
+.cta::before{display:none}
+.cta .lead,.cta-note{color:#b9c9cf}
+.cta .btn.btn-agendar{background:#fff;color:var(--ink);box-shadow:none}
+.cta .btn:not(.btn-agendar){background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45);box-shadow:none}
+footer{background:#0a1a22}
+</style>
+<style>
+/* ===== Ajustes mobile: Como funciona + Sobre ===== */
+@media(max-width:860px){
+  .photo{width:min(300px,76%);margin-inline:auto;aspect-ratio:1/1;max-height:none}
+  .photo-tag{left:10px;right:10px;bottom:10px;padding:8px 12px;border-radius:10px;text-align:center}
+  .photo-tag b{font-size:.95rem}
+  .photo-tag span{font-size:.78rem}
+  .about-grid{gap:22px}
+  .about-grid>.reveal.right{text-align:center}
+  .about-grid .eyebrow{margin-inline:auto}
+  .about-grid .lead{margin-inline:auto}
+  .about-grid .list{text-align:left;max-width:420px;margin-inline:auto}
+  .about-grid .btn{width:100%;max-width:420px}
+}
+@media(max-width:560px){
+  .steps{padding:36px 0}
+  .steps .grid{margin-top:20px}
+  .steps-grid{gap:8px}
+  .step{grid-template-columns:36px 1fr;column-gap:12px;align-items:center;padding:10px 12px;border-radius:12px}
+  .step .num{grid-row:1/3;width:36px;height:36px;font-size:.95rem;border-radius:8px;box-shadow:none}
+  .step h3{font-size:.95rem;margin:0}
+  .step p{font-size:.8rem;line-height:1.4}
+  .photo{width:min(230px,66%)}
+  .about-grid h2{font-size:1.35rem}
+  .about-grid .lead{font-size:.92rem}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol></svg>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<div class="progress" id="progress"></div>
+<header id="top">
+  <div class="container nav">
+    <a href="#" class="logo" aria-label="Clínica Odontológica Mara Pereira">
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M32 8c-6-5-20-3-20 12 0 10 4 14 6 24 1 6 4 12 8 12s4-10 6-10 2 10 6 10 7-6 8-12c2-10 6-14 6-24C52 5 38 3 32 8z" fill="currentColor"/></svg>
+      Clínica Mara Pereira
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu">
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-primary" href="tel:">Ligar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div><div class="blob a"></div><div class="blob b"></div>
+    <div class="container hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Odontologia em Almirante Tamandaré - PR</span>
+        <h1>Seu sorriso merece <span class="hl">cuidado de verdade</span></h1>
+        <p class="lead">Atendimento humanizado, tecnologia moderna e tratamentos personalizados para você sorrir com confiança.</p>
+        <div class="hero-cta">
+          <a class="btn btn-agendar" href="https://wa.me/?text=Ol%C3%A1!%20Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar avaliação</a>
+        </div>
+        <div class="badges">
+          
+          <span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></i><b>Almirante Tamandaré</b>&nbsp;- PR</span>
+          
+        </div>
+      </div>
+      <div class="hero-visual reveal right" style="--d:.15s">
+        <div class="hero-card">
+          <img src="DrMaria.png" alt="Dentista responsável da Clínica Odontológica Mara Pereira" width="1254" height="1254" fetchpriority="high" decoding="async">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="container center">
+      <span class="eyebrow reveal">Tratamentos</span>
+      <h2 class="reveal">Tudo para a saúde bucal da família</h2>
+      <p class="lead reveal">Do check-up preventivo aos procedimentos estéticos mais avançados.</p>
+      <div class="grid services">
+        <article class="card reveal" style="--d:0s"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 5 5.6.8-4 4 1 5.6-5-2.7-5 2.7 1-5.6-4-4 5.6-.8z"/></svg></div><h3>Clareamento</h3><p>Dentes mais brancos com segurança e sem sensibilidade excessiva.</p></article>
+        <article class="card reveal" style="--d:.08s"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Limpeza e prevenção</h3><p>Profilaxia completa e orientação para evitar cáries e gengivite.</p></article>
+        <article class="card reveal" style="--d:.16s"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div><h3>Ortodontia</h3><p>Aparelhos fixos e alinhadores transparentes para todas as idades.</p></article>
+        <article class="card reveal" style="--d:.24s"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></div><h3>Implantes</h3><p>Recupere a função e a estética com planejamento digital preciso.</p></article>
+        <article class="card reveal" style="--d:.32s"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 00-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 000-7.8z"/></svg></div><h3>Odontopediatria</h3><p>Ambiente acolhedor para as crianças criarem amor pelo dentista.</p></article>
+        <article class="card reveal" style="--d:.4s"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 10h18M9 4v16"/></svg></div><h3>Lentes e facetas</h3><p>Harmonização do sorriso com resultado natural e duradouro.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" id="como-agendar">
+    <div class="container center">
+      <span class="eyebrow reveal">Como funciona</span>
+      <h2 class="reveal">Agende em 3 passos simples</h2>
+      <div class="grid steps-grid">
+        <div class="step reveal"><span class="num">1</span><h3>Ligue para a clínica</h3><p>Fale com nossa equipe e escolha o melhor horário.</p></div>
+        <div class="step reveal" style="--d:.1s"><span class="num">2</span><h3>Faça sua avaliação</h3><p>O dentista analisa seu caso e explica as opções de tratamento.</p></div>
+        <div class="step reveal" style="--d:.2s"><span class="num">3</span><h3>Comece o tratamento</h3><p>Plano personalizado, com acompanhamento até o sorriso que você deseja.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+    <div class="about-grid">
+      <div class="photo reveal left">
+        <img src="DrMaria.png" alt="Dentista responsável da Clínica Odontológica Mara Pereira" width="1254" height="1254" loading="lazy" decoding="async">
+        <div class="photo-tag"><b>Mara Pereira</b><span>Dentista responsável</span></div>
+      </div>
+      <div class="reveal right">
+        <span class="eyebrow">Sobre</span>
+        <h2>Clínica Odontológica Mara Pereira</h2>
+        <p class="lead">Atendimento odontológico em Almirante Tamandaré. Nosso compromisso é entregar saúde, conforto e resultados naturais.</p>
+        <p class="lead" style="margin-top:12px">Na Clínica Mara Pereira, cada paciente recebe um plano pensado para a sua necessidade. Explicamos cada etapa com clareza, em um ambiente acolhedor, para que você se sinta seguro do início ao fim do tratamento.</p>
+        <ul class="list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Planejamento individual para cada paciente</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Equipamentos modernos e biossegurança rigorosa</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Atendimento pontual, sem pressa e sem dor</li>
+        </ul>
+        <a class="btn btn-primary" href="tel:">Ligar agora</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="proof" id="depoimentos">
+    <div class="container center">
+      <span class="eyebrow reveal">Depoimentos</span>
+      <h2 class="reveal">Quem cuida do sorriso aqui, recomenda</h2>
+      <p class="lead reveal">Histórias de pacientes atendidos pela Clínica Mara Pereira.</p>
+      <div class="grid proof-grid">
+        <figure class="quote reveal" style="margin:0;--d:0s"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>“Atendimento super cuidadoso, explicaram cada etapa do tratamento e não senti dor nenhuma. Recomendo!”</p><figcaption class="who"><span class="avatar">M</span><div><b>Maria S.</b><span>Paciente de clareamento</span></div></figcaption></figure>
+        <figure class="quote reveal" style="margin:0;--d:.1s"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>“Levei meu filho com medo de dentista e ele saiu pedindo para voltar. Equipe muito paciente e acolhedora.”</p><figcaption class="who"><span class="avatar">C</span><div><b>Carlos A.</b><span>Pai de paciente</span></div></figcaption></figure>
+        <figure class="quote reveal" style="margin:0;--d:.2s"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>“Consultório limpo, pontual e com resultado natural. Voltei a sorrir sem vergonha.”</p><figcaption class="who"><span class="avatar">J</span><div><b>Juliana P.</b><span>Paciente de ortodontia</span></div></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container center">
+      <span class="eyebrow reveal">Dúvidas</span>
+      <h2 class="reveal">Perguntas frequentes</h2>
+      <div class="faq" style="text-align:left">
+        <details class="reveal"><summary>Como agendo minha consulta?</summary><p>Basta entrar em contato com a clínica por telefone ou WhatsApp.</p></details>
+        <details class="reveal"><summary>A primeira avaliação tem custo?</summary><p>Entre em contato com a clínica e consulte as condições da avaliação inicial.</p></details>
+        <details class="reveal"><summary>Vocês aceitam convênios?</summary><p>Entre em contato com a clínica e consulte convênios e formas de pagamento.</p></details>
+        <details class="reveal"><summary>O clareamento causa sensibilidade?</summary><p>Pode ocorrer sensibilidade leve e temporária. Adotamos protocolos para minimizar o desconforto.</p></details>
+        <details class="reveal"><summary>Atendem emergências?</summary><p>Ligue e informe sua situação para verificarmos a disponibilidade de atendimento.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="local" id="localizacao">
+    <div class="container">
+      <div class="center">
+        <span class="eyebrow reveal">Localização</span>
+        <h2 class="reveal">Onde estamos</h2>
+        <p class="lead reveal">Atendimento em Almirante Tamandaré - PR.</p>
+      </div>
+      <div class="local-grid">
+        <div class="info reveal left">
+          <div class="info-item">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><h3>Endereço</h3><p>Almirante Tamandaré - PR</p></div>
+          </div>
+          <div class="info-item">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg></div>
+            <div><h3>Telefone</h3><p><a class="tel" href="tel:"></a></p></div>
+          </div>
+          <div class="info-item">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div><h3>Horários</h3><p>Consulte os horários de atendimento por telefone</p></div>
+          </div>
+          <div class="info-cta">
+            <a class="btn btn-agendar" href="https://wa.me/?text=Ol%C3%A1!%20Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar avaliação</a>
+            <a class="btn btn-primary" href="tel:">Ligar agora</a>
+          </div>
+        </div>
+        <div class="map reveal right" style="--d:.1s">
+          <iframe title="Mapa da Clínica Odontológica Mara Pereira" src="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <div class="cta reveal">
+        <h2>Pronto para transformar seu sorriso?</h2>
+        <p class="lead">Agende sua avaliação na Clínica Odontológica Mara Pereira.</p>
+        <div class="cta-btns"><a class="btn btn-agendar" href="https://wa.me/?text=Ol%C3%A1!%20Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar avaliação</a>
+        <a class="btn" href="tel:">Ligar</a></div>
+        <p class="cta-note">📍 Almirante Tamandaré/PR</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div><strong>Clínica Odontológica Mara Pereira</strong><p>Cuidado odontológico com atendimento humanizado em Almirante Tamandaré - PR.</p></div>
+      <div><strong>Navegue</strong><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#faq">Dúvidas</a><a href="#localizacao">Localização</a></div>
+      <div><strong>Contato</strong><span>Almirante Tamandaré - PR</span></div>
+    </div>
+    <div class="foot"><span>© <span id="year">2026</span> Clínica Odontológica Mara Pereira. Todos os direitos reservados.</span></div>
+  </div>
+</footer>
+
+<a class="wpp" href="https://wa.me/" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg aria-hidden="true" style="fill:currentColor"><use href="#i-wa"/></svg>
+</a>
+
+<div class="mbar" id="mbar">
+  <a class="btn btn-primary" href="tel:">Ligar agora</a>
+  <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=" target="_blank" rel="noopener">Como chegar</a>
+</div>
+
+<script>
+(function(){
+  var header=document.getElementById('top'),burger=document.getElementById('burger'),menu=document.getElementById('menu'),bar=document.getElementById('progress'),mbar=document.getElementById('mbar');
+  document.getElementById('year').textContent=new Date().getFullYear();
+
+  // Header ao rolar
+  var ticking=false;
+  addEventListener('scroll',function(){
+    if(ticking)return;ticking=true;
+    requestAnimationFrame(function(){
+      var y=scrollY,max=document.documentElement.scrollHeight-innerHeight;
+      header.classList.toggle('scrolled',y>20);
+      bar.style.transform='scaleX('+(max>0?Math.min(y/max,1):0)+')';
+      mbar.classList.toggle('show',y>420);
+      ticking=false;
+    });
+  },{passive:true});
+
+  // Menu mobile
+  function toggle(open){burger.setAttribute('aria-expanded',open);menu.classList.toggle('open',open)}
+  burger.addEventListener('click',function(){toggle(burger.getAttribute('aria-expanded')!=='true')});
+  menu.addEventListener('click',function(e){if(e.target.tagName==='A')toggle(false)});
+  addEventListener('keydown',function(e){if(e.key==='Escape')toggle(false)});
+  document.addEventListener('click',function(e){if(!header.contains(e.target))toggle(false)});
+
+  // Reveal on scroll
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});}
+  else{
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}});
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){io.observe(e)});
+  }
+
+  // Rolagem suave sem recarregar a página
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href');
+      if(id==='#'){e.preventDefault();scrollTo({top:0,behavior:'smooth'});return}
+      var t=document.querySelector(id);
+      if(!t)return;
+      e.preventDefault();
+      t.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+
+  // Item ativo do menu
+  var links=document.querySelectorAll('.menu a[href^="#"]:not(.btn)');
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id)})}});
+    },{rootMargin:'-45% 0px -50% 0px'});
+    links.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)so.observe(s)});
+  }
+})();
+</script>
+</body>
+</html>
